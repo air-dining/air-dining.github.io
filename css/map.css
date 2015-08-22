@@ -23,6 +23,10 @@ body {
 	background-color: #ff6553;
 }
 
+/* content */
+.row {
+	margin:0px;
+}
 
 .hostImg {
     border: 5px solid white;
@@ -42,7 +46,7 @@ hr{
  }
 
 .portfolio-item {
-	width:90%;
+	width:100%;
 	margin:0px;
 	padding:0px;
 }

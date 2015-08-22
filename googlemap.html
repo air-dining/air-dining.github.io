@@ -10,12 +10,13 @@
     <meta name="author" content="">
 
     <title>吃飯趣</title>
+    <link rel="icon" type="image/png" href="img/logo_small.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="css/map.css" rel="stylesheet">
-    
+
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -57,8 +58,9 @@
                                 <table class="host">
                                     <tr>
 	                                    <td>
-		                                    <a href="#">
-											<img class="img-portfolio img-responsive col-md-4" src="img/Title1.jpg">
+		                                    <a href="#" id="map_marker">
+											<input type="image" src="img/Title1.jpg"  alt="send" name="Test" class="img-portfolio img-responsive col-md-4" onclick="" />
+											<img class="" src="">
                                 			</a>
 	                                    </td>
                                         <td>
@@ -85,7 +87,7 @@
                                     <tr>
 	                                    <td>
 		                                    <a href="#">
-											<img class="img-portfolio img-responsive col-md-4" src="img/Title2.jpg">
+											<input type="image" src="img/Title2.jpg"  alt="send" name="Test" class="img-portfolio img-responsive col-md-4" onclick="" />
                                 			</a>
 	                                    </td>
                                         <td>
@@ -112,7 +114,7 @@
                                     <tr>
 	                                    <td>
 		                                    <a href="#">
-											<img class="img-portfolio img-responsive col-md-4" src="img/Title3.jpg">
+											<input type="image" src="img/Title3.jpg"  alt="send" name="Test" class="img-portfolio img-responsive col-md-4" onclick="send();" />
                                 			</a>
 	                                    </td>
                                         <td>
@@ -138,7 +140,7 @@
                                     <tr>
                                         <td>
 		                                    <a href="#">
-											<img class="img-portfolio img-responsive col-md-4" src="img/Title4.jpg">
+											<input type="image" src="img/Title4.jpg"  alt="send" name="Test" class="img-portfolio img-responsive col-md-4" onclick="();" />
                                 			</a>
 	                                    </td>
                                         <td>
@@ -197,7 +199,7 @@ function initMap() {
   var tag2 = {lat: 25.040860,lng: 121.518560};
   var tag3 = {lat: 25.035200, lng: 121.512500};
   var tag4 = {lat: 25.037300, lng: 121.510000};
-  
+
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 14,
@@ -209,7 +211,7 @@ function initMap() {
     map: map,
     title: '今晚來吃肉'
   });
-  
+
   var contentString = '<div id="content" style="width:80%; max-width:300px;">'+
       '<div id="siteNotice">'+
       '</div>'+
@@ -229,7 +231,7 @@ var marker2 = new google.maps.Marker({
     map: map,
     title: '享食天堂'
   });
-      
+
   var contentString2 = '<div id="content" style="width:80%; max-width:400px;">'+
       '<div id="siteNotice">'+
       '</div>'+
@@ -271,7 +273,7 @@ var marker4 = new google.maps.Marker({
     map: map,
     title: '老王的家'
   });
- 
+
 
   var contentString4 = '<div id="content" style="width:80%; max-width:400px;">'+
       '<div id="siteNotice">'+
@@ -287,12 +289,16 @@ var marker4 = new google.maps.Marker({
       '</div>'+
       '</div>';
 
- 
+
   var infowindow = new google.maps.InfoWindow({
     content: contentString
   });
 
   marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+  
+  $('#map_marker').on('click', function(){
     infowindow.open(map, marker);
   });
 
@@ -303,7 +309,7 @@ var marker4 = new google.maps.Marker({
   marker2.addListener('click', function() {
     infowindow2.open(map, marker2);
   });
-  
+
   var infowindow3 = new google.maps.InfoWindow({
     content: contentString3
   });
@@ -311,7 +317,7 @@ var marker4 = new google.maps.Marker({
   marker3.addListener('click', function() {
     infowindow3.open(map, marker3);
   });
-  
+
   var infowindow4 = new google.maps.InfoWindow({
     content: contentString4
   });
