@@ -1,0 +1,86 @@
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+#map {
+		width: 100%;
+		height:50%
+      }
+
+body {
+    font-family: sourcehansans-tc,sans-serif,"Source Sans Pro","Helvetica Neue",Helvetica,Arial;
+}
+
+/* Navbar*/
+.navbutton{
+	height:30px;
+	margin:10px;
+}
+
+.navbuttonarea {
+	background-color: #ff6553;
+}
+
+
+.hostImg {
+    border: 5px solid white;
+    border-radius: 50%;
+    width:100%;
+    max-width:100px;
+    padding:0px;
+}
+
+hr{
+	margin:0px;
+}
+.host{
+	width:100%;
+	text-align: left;
+	padding:0px;
+ }
+
+.portfolio-item {
+	width:90%;
+	margin:0px;
+	padding:0px;
+}
+
+.star {
+    width:20px;
+}
+
+.img-portfolio {
+    margin-top:0px auto;
+    width:100%;
+    max-width: 150px;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.selection{
+    width:80%;
+    font-size:20px;
+    color:black;
+    margin-top:20px;
+    margin-button:-20px;
+    padding:10px;
+    background-color: rgb(200,200,200);
+}
+
+.selectionbg{
+	background-color: #b87d30;
+}
+
+.call-to-action {
+    padding: 20px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
