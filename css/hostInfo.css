@@ -1,0 +1,14 @@
+.hostInfoPage {
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.hostPic {
+  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.reviewerPic img{
+  width: 80%;
+}
