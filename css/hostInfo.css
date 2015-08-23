@@ -1,6 +1,5 @@
 .hostInfoPage {
   font-size: 18px;
-  padding-bottom: 20px;
 }
 
 /* Navbar*/
@@ -41,7 +40,8 @@
 
 .review {
   background-color: #f0f0f0;
-  padding: 6%;
+  padding-top: 5%;
+  padding-bottom: 2%;
   padding-right: 4%;
   padding-left: 0%;
 }
@@ -56,6 +56,7 @@
 
 .reviewWrapper {
   margin-top: 30px;
+  background-color: #f0f0f0;
 }
 
 .reviewerPic img{

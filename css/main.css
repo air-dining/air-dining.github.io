@@ -158,3 +158,40 @@ span.cancel{
   padding-top: 110px;
   padding-bottom: 40px;
 }
+
+
+/* Navbar*/
+.navbutton{
+	height:30px;
+	margin:10px;
+	padding:0px;
+
+}
+
+.navbuttonarea {
+	background-color: #ff6553;
+}
+
+/* Call to Action */
+
+.selection{
+    width:80%;
+    font-size:20px;
+    color:black;
+    margin-top:20px;
+    margin-button:-20px;
+    padding:10px;
+    background-color: rgb(200,200,200);
+}
+
+.selectionbg{
+	background-color: #b87d30;
+}
+
+.call-to-action {
+    padding: 20px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
