@@ -1,5 +1,4 @@
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -27,6 +26,10 @@ body {
 .row {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.headrow {
+	padding:0px;
 }
 
 #hostPic{
@@ -169,7 +172,7 @@ span.cancel{
 }
 
 .navbuttonarea {
-	background-color: #ff6553;
+	background-color: #FFB343;
 }
 
 /* Call to Action */
