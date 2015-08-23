@@ -13,6 +13,9 @@ body {
     font-family: sourcehansans-tc,sans-serif,"Source Sans Pro","Helvetica Neue",Helvetica,Arial;
 }
 
+.row {
+	width:100%;
+}
 /* Navbar*/
 .navbutton{
 	height:30px;
