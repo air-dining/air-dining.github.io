@@ -59,8 +59,9 @@ body {
 
 .btn-default{
   background: rgb(255,120,53);
-  text-shadow: 0 1px 0 grey;
   border-color: rgb(230,97,48);
+  color: white;
+  font-weight: normal;
 }
 
 #tablePics img{

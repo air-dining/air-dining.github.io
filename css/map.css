@@ -23,6 +23,16 @@ body {
 	background-color: #ff6553;
 }
 
+/* mapbutton */
+.reserveButton{
+	font-size: 15px;
+	color:white;
+	padding:5px;
+	background-color:orange;
+	box-shadow: 0px 0px 2px gray;
+	border-radius: 5px;
+}
+
 /* content */
 .row {
 	margin:0px;

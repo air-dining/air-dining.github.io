@@ -36,12 +36,17 @@
   </head>
   <body>
 
+<!-- navigation bar -->
 <section class="navbuttonarea">
         <div class="container">
            <div class="row">
+				<a href="index.html">
 				<img class="navbutton" src="img/logo.png">
+				</a>
 				<img class="navbutton" align="right" src="img/user.png">
+				<a href="message.html">
 				<img class="navbutton" align="right" src="img/mail.png">
+				</a>
 				<img class="navbutton" align="right" src="img/Heart.png">
 				<img class="navbutton" align="right" src="img/chef.png">
 
@@ -59,8 +64,7 @@
                                     <tr>
 	                                    <td>
 		                                    <a href="#" id="map_marker">
-											<input type="image" src="img/Title1.jpg"  alt="send" name="Test" class="img-portfolio img-responsive col-md-4" onclick="" />
-											<img class="" src="">
+											<img class="img-portfolio img-responsive col-md-4" src="img/Title1.jpg">
                                 			</a>
 	                                    </td>
                                         <td>
@@ -68,7 +72,7 @@
                                         </td>
                                         <td>
                                         <div class="host col-md-4">
-                                        <h4>中正區 老王的家</h4>
+                                        <h4>老王的家</h4>
                                         <h4>地中海料理</h4>
                                         <img class="star" src="img/star.png" />
                                         <img class="star" src="img/star.png" />
@@ -86,8 +90,8 @@
                                 <table class="host">
                                     <tr>
 	                                    <td>
-		                                    <a href="#">
-											<input type="image" src="img/Title2.jpg"  alt="send" name="Test" class="img-portfolio img-responsive col-md-4" onclick="" />
+		                                    <a href="#" id="map_marker2">
+											<img class="img-portfolio img-responsive col-md-4" src="img/Title2.jpg">
                                 			</a>
 	                                    </td>
                                         <td>
@@ -95,7 +99,7 @@
                                         </td>
                                         <td>
                                         <div class="host col-md-4">
-                                        <h4>中正區 義式大叔</h4>
+                                        <h4>義式大叔</h4>
                                         <h4>義式料理</h4>
                                         <img class="star" src="img/star.png" />
                                         <img class="star" src="img/star.png" />
@@ -113,8 +117,8 @@
                                 <table class="host">
                                     <tr>
 	                                    <td>
-		                                    <a href="#">
-											<input type="image" src="img/Title3.jpg"  alt="send" name="Test" class="img-portfolio img-responsive col-md-4" onclick="send();" />
+		                                    <a href="#" id="map_marker3">
+											<img class="img-portfolio img-responsive col-md-4" src="img/Title3.jpg">
                                 			</a>
 	                                    </td>
                                         <td>
@@ -122,8 +126,9 @@
                                         </td>
                                         <td>
                                         <div class="host col-md-4">
-                                        <h4>大安區 雙生的窩</h4>
+                                        <h4>雙生的窩</h4>
                                         <h4>下酒料理</h4>
+                                        <img class="star" src="img/star.png" />
                                         <img class="star" src="img/star.png" />
                                         <img class="star" src="img/star.png" />
                                         <img class="star" src="img/star.png" />
@@ -139,18 +144,16 @@
 	                        	<table class="host">
                                     <tr>
                                         <td>
-		                                    <a href="#">
-											<input type="image" src="img/Title4.jpg"  alt="send" name="Test" class="img-portfolio img-responsive col-md-4" onclick="();" />
-                                			</a>
+		                                    <a href="#" id="map_marker4">
+											<img class="img-portfolio img-responsive col-md-4" src="img/Title4.jpg">                                											</a>
 	                                    </td>
                                         <td>
                                         <img class="hostImg col-md-4" src="img/female25.jpg" />
                                         </td>
                                         <td>
                                         <div class="host col-md-4">
-                                        <h4>大安區 妙廚小妹</h4>
+                                        <h4>妙廚小妹</h4>
                                         <h4>日式料理</h4>
-                                        <img class="star" src="img/star.png" />
                                         <img class="star" src="img/star.png" />
                                         <img class="star" src="img/star.png" />
                                         <img class="star" src="img/star.png" />
@@ -193,6 +196,8 @@
 
 
     <script>
+	   
+
 
 function initMap() {
   var tag1 = {lat: 25.030700, lng: 121.518550};
@@ -215,14 +220,13 @@ function initMap() {
   var contentString = '<div id="content" style="width:80%; max-width:300px;">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h3 id="firstHeading" class="firstHeading">今晚來吃肉</h3>'+
+      '<h3 id="firstHeading" class="firstHeading">老王的家</h3><h4><a href="table_description.html" class="reserveButton">我要預約</a></h4>'+
       '<div id="bodyContent">'+
-      '<h4> 大廚：	阿明師</h4>'+
-	  '<h4> 日期：	8/21</h4>'+
+      '<h4> 大廚：	老王</h4>'+
+	  '<h4> 日期：	8/23</h4>'+
 	  '<h4> 時間：	19:30</h4>'+
 	  '<h4> 價格：	120 NTD</h4>'+
-      '<h4>我是阿明，大家都叫我阿明師，因為我超會做菜！希望大家都會喜歡我煮的東西，今天的主題是生鮮肉類，我特地從市場採買了最新鮮的各式肉類，準備用各種作法發揮他們的原味！</h4>'+
-      '<button type="button" style="width:100px;height:30px;font-size:20px;border-radius:5px; margin-bottom:20px;">查看詳情</button>'+
+      '<h4>我是老王，大家都叫我阿王師，因為我超會做菜！希望大家都會喜歡我煮的東西，今天的主題是生鮮肉類，我特地從市場採買了最新鮮的各式肉類，準備用各種作法發揮他們的原味！</h4>'+
       '</div>'+
       '</div>';
 
@@ -235,7 +239,7 @@ var marker2 = new google.maps.Marker({
   var contentString2 = '<div id="content" style="width:80%; max-width:400px;">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h3 id="firstHeading" class="firstHeading">饗食天堂</h3>'+
+      '<h3 id="firstHeading" class="firstHeading">義式大叔</h3><h4><a href="table_description.html" class="reserveButton">我要預約</a></h4>'+
       '<div id="bodyContent">'+
       '<h4> 大廚：	享食主義者</h4>'+
 	  '<h4> 日期：	8/21</h4>'+
@@ -257,7 +261,7 @@ var marker3 = new google.maps.Marker({
   var contentString3 = '<div id="content" style="width:80%; max-width:400px;">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h3 id="firstHeading" class="firstHeading">今晚來吃肉</h3>'+
+      '<h3 id="firstHeading" class="firstHeading">雙生的窩</h3><h4><a href="table_description.html" class="reserveButton">我要預約</a></h4>'+
       '<div id="bodyContent">'+
       '<h4>	大廚：	阿明師</h4>'+
 	  '<h4> 日期：	8/21</h4>'+
@@ -278,7 +282,7 @@ var marker4 = new google.maps.Marker({
   var contentString4 = '<div id="content" style="width:80%; max-width:400px;">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h3 id="firstHeading" class="firstHeading">今晚來吃肉</h3>'+
+      '<h3 id="firstHeading" class="firstHeading">妙廚小妹</h3><h4><a href="table_description.html" class="reserveButton">我要預約</a></h4>'+
       '<div id="bodyContent">'+
       '<h4>	大廚：	阿明師</h4>'+
 	  '<h4> 日期：	8/21</h4>'+
@@ -298,7 +302,7 @@ var marker4 = new google.maps.Marker({
     infowindow.open(map, marker);
   });
   
-  $('#map_marker').on('click', function(){
+  document.getElementById('map_marker').addEventListener('click', function(){
     infowindow.open(map, marker);
   });
 
@@ -310,6 +314,10 @@ var marker4 = new google.maps.Marker({
     infowindow2.open(map, marker2);
   });
 
+document.getElementById('map_marker2').addEventListener('click', function(){
+    infowindow2.open(map, marker2);
+  });
+  
   var infowindow3 = new google.maps.InfoWindow({
     content: contentString3
   });
@@ -318,11 +326,19 @@ var marker4 = new google.maps.Marker({
     infowindow3.open(map, marker3);
   });
 
+document.getElementById('map_marker3').addEventListener('click', function(){
+    infowindow3.open(map, marker3);
+  });
+
   var infowindow4 = new google.maps.InfoWindow({
     content: contentString4
   });
 
   marker4.addListener('click', function() {
+    infowindow4.open(map, marker4);
+  });
+
+document.getElementById('map_marker4').addEventListener('click', function(){
     infowindow4.open(map, marker4);
   });
 

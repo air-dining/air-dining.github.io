@@ -22,44 +22,91 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+<!-- navigation bar -->
+<section class="navbuttonarea">
+        <div class="container">
+           <div class="row">
+				<a href="index.html">
+				<img class="navbutton" src="img/logo.png">
+				</a>
+				<img class="navbutton" align="right" src="img/user.png">
+				<a href="message.html">
+				<img class="navbutton" align="right" src="img/mail.png">
+				</a>
+				<img class="navbutton" align="right" src="img/Heart.png">
+				<img class="navbutton" align="right" src="img/chef.png">
+
+           </div>
+        </div>
+</section>
+
+
     <div class="container hostInfoPage">
       <div class="row">
-        <div class="col-xs-4">
+        <div class="col-xs-12 infoWrapper">
           <img src="img/male30.jpg" alt="" class="hostPic">
-          <div class="certificates">
-            <span class="glyphicon glyphicon-remove"></span>電話認證 <br>
-            <span class="glyphicon glyphicon-ok"></span>臉書認證 <br>
-            <span class="glyphicon glyphicon-ok"></span>電郵認證 <br>
+          <div class="infoContent">
+            <h3>姓名</h3>
+            <p>老王</p>
+            <h3>自我介紹</h3>
+            <p>我是老王，大家都叫我老王，大家都喜歡吃我做的菜</p>
           </div>
         </div>
-        <div class="col-xs-8 hostInfo">
-          姓名：<br>
-          老王 <br>
-          關於：<br>
-          我是老王，我的興趣是做菜，每週四固定開桌唷！ <br>
-          平均評價：<br>
-          4.7 顆星
+        <div class="text-center col-xs-12 certificates">
+          <h3>身分認證</h3>
+          <span class="glyphicon glyphicon-earphone"></span>
+          <span class="glyphicon glyphicon-envelope"></span>
+          <span class="glyphicon glyphicon-thumbs-up uncertificated"></span>
         </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-xs-4 reviewerPic">
-          <img src="img/users/female25.jpg" alt="">
+      <div class="reviewWrapper">
+        <div class="row review">
+          <div class="col-xs-4 reviewerPic">
+            <img src="img/users/female25.jpg" alt="">
+          </div>
+          <div class="col-xs-8 reviewBody">
+            老王煮菜超棒的！
+          </div>
         </div>
-        <div class="col-xs-8 reviewBody">
-          老王煮菜超棒的！
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-xs-4 reviewerPic">
-          <img src="img/users/male40.jpg" alt="">
-        </div>
-        <div class="col-xs-8 reviewBody">
-          我愛老王
+        <div class="row review">
+          <div class="col-xs-4 reviewerPic">
+            <img src="img/users/male40.jpg" alt="">
+          </div>
+          <div class="col-xs-8 reviewBody">
+            我愛老王
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary selectionbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <form>
+                    <select name="language" class="selection">
+　                   <option value="TChinese">繁體中文</option>
+　                   <option value="SChinese">简体中文</option>
+                     <option value="English">English</option>
+　                   <option value="Japanese">日本語</option>
+                    </select>
+                    </form>
+                    <form>
+                    <select name="Currency" class="selection">
+　                   <option value="TWD">TWD</option>
+　                   <option value="RMB">RMB</option>
+                     <option value="USB">USD</option>
+　                   <option value="JPN">JPN</option>
+                    </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
 
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 

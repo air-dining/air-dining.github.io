@@ -1,14 +1,101 @@
 .hostInfoPage {
   font-size: 18px;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/* Navbar*/
+.navbutton{
+	height:30px;
+	margin:10px;
+
+}
+
+.navbuttonarea {
+	background-color: #ff6553;
+}
+
+.infoWrapper{
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 25px;
+  padding-top: 0;
+}
+
+.infoContent {
+  background-color: white;
+  border-bottom: solid 20px #FFB343;
+  padding: 25px;
+  padding-bottom: 15px;
+  padding-top: 30%;
+  margin-top: 40%;
+}
+
 .hostPic {
   border-radius: 50%;
-  width: 100%;
-  margin-bottom: 20px;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 8%;
+  border: 6px solid white;
+}
+
+.review {
+  background-color: #f0f0f0;
+  padding: 6%;
+  padding-right: 4%;
+  padding-left: 0%;
+}
+
+.reviewBody {
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+.reviewWrapper {
+  margin-top: 30px;
 }
 
 .reviewerPic img{
-  width: 80%;
+  width: 95%;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.certificates .glyphicon{
+  background-color: #FFB343;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.uncertificated.glyphicon{
+  background-color: #c5c5c5;
+}
+
+/* Call to Action */
+
+.selection{
+    width:80%;
+    font-size:20px;
+    color:black;
+    margin-top:20px;
+    margin-button:-20px;
+    padding:10px;
+    background-color: rgb(200,200,200);
+}
+
+.selectionbg{
+	background-color: #b87d30;
+}
+
+.call-to-action {
+    padding: 20px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
 }
